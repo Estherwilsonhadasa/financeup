@@ -75,7 +75,7 @@ def record(request):
 			# esty=form.cleaned_data['content']
 			# Ijas.objects.create(title=queen,content=esty)
 			
-		return HttpResponseRedirect('/')
+		return HttpResponseRedirect('/transaction')
 	else:
 		recordform=RecordForm()
 		return render(request,"record/create.html", {"recordform":recordform})
