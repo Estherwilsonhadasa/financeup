@@ -146,10 +146,10 @@ ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com']
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'northalliancetrust',
-        'USER': 'root',
-        'PASSWORD': '',
-        'HOST': 'localhost',
+        'NAME': 'dfu3h1m9rbsj1g',
+        'USER': 'owijfizmzetpkd',
+        'PASSWORD': 'ec70880b8ea7bfb8238eed2829751fd1de59d250aa3b87ad1329c83059f8f68c',
+        'HOST': 'ec2-54-163-229-212.compute-1.amazonaws.com',
         'PORT': '',
     }
 }
