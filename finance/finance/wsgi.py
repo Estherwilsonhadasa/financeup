@@ -16,6 +16,6 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "finance.settings")
 application = get_wsgi_application()
 
 # modified for heroku
-from whitenoise.django import DjangoWhiteNoise
-application = DjangoWhiteNoise(application)
+# from whitenoise.django import DjangoWhiteNoise
+# application = DjangoWhiteNoise(application)
 
