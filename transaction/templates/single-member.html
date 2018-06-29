@@ -170,9 +170,10 @@
 
             <div class="card">
                 <img src="{% static 'images/logo/northalliance.jpg' %}" alt="John" style="width:100%">
-                <h1>John Doe</h1>
-                <p class="title">CEO & Founder, Example</p>
-                <p>Harvard University</p>
+                <h1>welcome {{ user.username }}</h1>
+                <p class="title">{{ user.username }}</p>
+                <p>{{ user.profile.birth_date }}</p>
+                <p>{{ user.profile.email }}</p>
                 <a href="#"><i class="fa fa-dribbble"></i></a> 
                 <a href="#"><i class="fa fa-twitter"></i></a> 
                 <a href="#"><i class="fa fa-linkedin"></i></a> 
