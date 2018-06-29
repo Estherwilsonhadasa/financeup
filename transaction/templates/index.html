@@ -96,8 +96,8 @@
     <div id="minimal-bootstrap-carousel" data-ride="carousel" class="carousel slide carousel-fade shop-slider">
       <!-- Wrapper for slides-->
       <div role="listbox" class="carousel-inner">
-        <div style="background-image: url({{ STATIC_URL }}images/new/slider1.jpg);background-position: center right;" class="item active slide-1">
-          <div class="carousel-caption">
+        <div style="background-image: url('{% static "images/new/slider1.jpg" %}' );background-position: center right;" class="item active slide-1">
+          <div class="carousel-caption">'{% static "images/33.jpg"%}'
             <div class="thm-container">
               <div class="box valign-bottom">
                 <div class="content text-center"><img data-animation="animated fadeInUp" src="{% static 'images/new/title-silder.png' %}" alt="">
