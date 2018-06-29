@@ -96,7 +96,7 @@
     <div id="minimal-bootstrap-carousel" data-ride="carousel" class="carousel slide carousel-fade shop-slider">
       <!-- Wrapper for slides-->
       <div role="listbox" class="carousel-inner">
-        <div style="{% static 'background-image: url(images/new/slider1.jpg);background-position: center right;' %}" class="item active slide-1">
+        <div style="background-image: url({{ STATIC_URL }}images/new/slider1.jpg);background-position: center right;" class="item active slide-1">
           <div class="carousel-caption">
             <div class="thm-container">
               <div class="box valign-bottom">
@@ -108,7 +108,7 @@
             </div>
           </div>
         </div>
-        <div style="{% static 'background-image: url(images/new/slider2.jpg);background-position: center right;' %}" class="item slide-2">
+        <div style="background-image: url({{ STATIC_URL }}images/new/slider2.jpg);background-position: center right;" class="item slide-2">
           <div class="carousel-caption">
             <div class="thm-container">
               <div class="box valign-bottom">
