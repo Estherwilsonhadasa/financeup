@@ -1,0 +1,253 @@
+{% load staticfiles %} 
+{% load widget_tweaks %}
+
+<!DOCTYPE html>
+<html>
+  
+<!-- Mirrored from demos.pixelatethemes.com/financepro/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 10 Dec 2016 16:41:06 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <title>Finance Up</title>
+    <!-- mobile responsive meta-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static  'plugins/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static  'plugins/fontawesome/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static  'plugins/fncp-icon/style.css' %}">
+    <link rel="stylesheet" href="{% static  'plugins/Stroke-Gap-Icons-Webfont/style.css' %}">
+    <link rel="stylesheet" href="{% static  'plugins/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static  'plugins/owl.carousel-2/assets/owl.carousel.css' %}">
+    <link rel="stylesheet" href="{% static  'plugins/owl.carousel-2/assets/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static  'plugins/bootstrap-select/dist/css/bootstrap-select.min.css' %}">
+    <!-- main stylesheet-->
+    <link rel="stylesheet" href="{% static  'css/style.css' %}">
+    <link rel="stylesheet" href="{% static  'css/responsive.css' %}">
+  </head>
+  <body>
+    <header class="header">
+      <div class="thm-container clearfix">
+        <div class="logo pull-left"><a href="/"><img src="{% static  'images/logo.png' %}" alt="Awesome Image"></a></div>
+        <div class="header-right-info pull-right">
+          <ul>
+            <li>
+              <div class="single-header-right-info">
+                <div class="icon-box"><i class="icon icon-Pointer"></i></div>
+                <div class="text-box">
+                  <p>13005 Greenville Avenue <br>California, TX 70240</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="single-header-right-info">
+                <div class="icon-box"><i class="icon icon-Phone2"></i></div>
+                <div class="text-box">
+                  <p>+ (1800) 456 7890 <br>info@financepro.com</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="single-header-right-info">
+                <div class="icon-box"><i class="icon icon-Timer"></i></div>
+                <div class="text-box">
+                  <p>Mon - Sat 9.00 - 19.00 <br>Sunday Closed</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <nav id="main-navigation-wrapper" class="navbar navbar-default finance-navbar">
+      <div class="thm-container">
+        <div class="navbar-header">
+          <div class="logo-menu"><img src="images/new/logo-menu.png" alt=""></div>
+          <button type="button" data-toggle="collapse" data-target="#main-navigation" aria-expanded="false" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+        </div>
+        <div id="main-navigation" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+            <li><a href="/signup">Register</a></li>
+            <li><a href="/login">Login</a></li>
+            <!-- <li><a href="single-member.html">Profile</a></li> -->
+            <li><a href="/services">Services</a></li>
+          </ul>
+          <form role="search" class="navbar-form navbar-right">
+            <input type="text" placeholder="Enter Keywords">
+            <button type="submit"><i class="icon icon-Search"></i></button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <section class="inner-banner">
+      <div class="thm-container">
+        <div class="page-title">
+          <h3>Signup</h3>
+          <!-- <p>Money Doesn’t Come Without Guidence ...</p> -->
+        </div>
+      </div>
+    </section>
+    <div class="bread-cumb">
+      <div class="thm-container">
+        <ul class="list-inline">
+          <li><a href="/">Home</a></li>
+          <li><span>Signup</span></li>
+        </ul>
+      </div>
+    </div>
+    <section class="sec-pad contact-page contact-section">
+        <div class="container">
+            <div class="card" style="width: 70rem;">
+                  <!-- <form method="post">
+                      {% csrf_token %}
+                      {% for field in form %}
+                        <p>
+                          {{ field.label_tag }}<br>
+                          {{ field }}
+                          {% if field.help_text %}
+                            <small style="color: grey">{{ field.help_text }}</small>
+                          {% endif %}
+                          {% for error in field.errors %}
+                            <p style="color: red">{{ error }}</p>
+                          {% endfor %}
+                        </p>
+                      {% endfor %}
+                      <button type="submit">Sign up</button>
+                    </form> -->
+              <form method="post">
+                  {% csrf_token %}
+              
+                  {% for hidden in form.hidden_fields %}
+                    {{ hidden }}
+                  {% endfor %}
+              
+                  {% for field in form.visible_fields %}
+                    <div class="form-group">
+                      <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+                      {{ field|add_class:'form-control' }}
+                      {% for error in field.errors %}
+                        <span class="help-block">{{ error }}</span>
+                      {% endfor %}
+                    </div>
+                  {% endfor %}
+              
+                  <div class="form-group">
+                    <button type="submit" class="btn btn-success">
+                      <span class="glyphicon glyphicon-ok"></span> Submit
+                    </button>
+                    <a href="{% url 'index' %}" class="btn btn-default">Cancel</a>
+                  </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="footer-contacts">
+      <div class="thm-container">
+        <h2>We help you to make the best marketable strategy , asset and execution</h2><a data-animation="animated fadeInLeft" href="#" class="thm-button">Contact Us <i class="fa fa-arrow-right"></i></a>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="thm-container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="footer-widget about-widget"><a href="/"><img src="{% static  'images/new/logo2.png' %}" alt="Awesome Image"></a>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+              <div class="tel-box">
+                <div class="icon-box"><i class="fa fa-map-marker"></i></div>
+                <div class="text-box">
+                  <p>42 Tailstoi Town 5248 MT, Wordwide Country</p>
+                </div>
+              </div>
+              <div class="tel-box">
+                <div class="icon-box"><i class="fa fa-phone"></i></div>
+                <div class="text-box">
+                  <p>( 018) 65 524 8503  /  (125) 954 7854</p>
+                </div>
+              </div>
+              <div class="tel-box">
+                <div class="icon-box"><i class="fa fa-envelope"></i></div>
+                <div class="text-box">
+                  <p><a href="#">contact@financepro.com</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <div class="footer-widget links-widget links-widget-pac">
+              <div class="title">
+                <h2>Explore</h2>
+                <div class="decor-line"></div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 col-sm-12">
+                  <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/contact">Contact Us</a></li>
+                    <!-- <li><a href="single-member.html">Profile</a></li> -->
+                    <li><a href="/services">Services</a></li>
+                  </ul>
+                </div>
+               <!--  <div class="col-md-6 col-sm-6">
+                  <ul>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Retairment</a></li>
+                    <li><a href="#">Trade</a></li>
+                    <li><a href="#">Investment</a></li>
+                    <li><a href="#">Taxtation</a></li>
+                  </ul>
+                </div> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <div class="footer-widget subscribe-widget">
+              <div class="title">
+                <h2>Subscribe Newsletter</h2>
+                <div class="decor-line"></div>
+              </div>
+              <form action="#">
+                <p>Get latest updates and offers.</p>
+                <div class="newsletter-widget">
+                  <input type="text" placeholder="Enter your email address">
+                  <button type="submit" class="thm-button"><i class="fa fa-envelope"></i></button>
+                </div>
+              </form>
+              <ul class="social list-inline">
+                <li><a href="facebook.com"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="linkedin.com"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="twitter.com"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="google.com"><i class="fa fa-google-plus"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <section class="footer-bottom">
+      <div class="thm-container clearfix">
+        <div class="pull-left">
+          <p>Copyright © Finance Up 2018. All rights reserved. </p>
+        </div>
+        <div class="pull-right">
+          <p>Created by: DesignArc</p>
+        </div>
+      </div>
+    </section>
+    <!-- helper js-->
+    <script src="plugins/jquery.min.js"></script>
+    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="plugins/owl.carousel-2/owl.carousel.min.js"></script>
+    <script src="plugins/jquery.mixitup.min.js"></script>
+    <script src="plugins/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+    <script src="plugins/Chart.min.js"></script>
+    <script src="plugins/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="plugins/waypoints.min.js"></script>
+    <script src="plugins/jquery.counterup.min.js"></script>
+    <script src="js/theme.js"></script>
+  </body>
+
+<!-- Mirrored from demos.pixelatethemes.com/financepro/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 10 Dec 2016 16:41:06 GMT -->
+</html>
+
+    
