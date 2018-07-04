@@ -20,7 +20,7 @@ import os
 # # application = DjangoWhiteNoise(application)
 
 
-
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "finance.settings")
 from django.core.wsgi import get_wsgi_application
 from dj_static import Cling
 

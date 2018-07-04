@@ -18,6 +18,44 @@
     <!-- main stylesheet-->
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <style>
+      .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      max-width: 300px;
+      margin: auto;
+      text-align: center;
+      }
+
+      .title {
+          color: grey;
+          font-size: 18px;
+      }
+
+      button {
+          border: none;
+          outline: 0;
+          display: inline-block;
+          padding: 8px;
+          color: white;
+          background-color: #000;
+          text-align: center;
+          cursor: pointer;
+          width: 100%;
+          font-size: 18px;
+      }
+
+      a {
+          text-decoration: none;
+          font-size: 22px;
+          color: black;
+      }
+
+      button:hover, a:hover {
+          opacity: 0.7;
+      }
+
+    </style>
+     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
   </head>
   <body class="sec-page-single-member">
     <header class="header">
@@ -105,16 +143,121 @@
           <div class="col-md-6 col-sm-12 pull-right">
             <div class="img"><img src="{% static 'images/logo/northalliance.jpg' %}" alt=""></div>
           </div>
-          <div class="col-md-6 col-sm-12">
-              <h1>welcome {{ user.username }}</h1>
-             
-            <h3>{{ user.username }}</h3>
-            <h3>{{ user.profile.location }}</h3>
-            <h3>{{ user.profile.birth_date }}</h3>
-            <h3>{{ user.profile.email }}</h3>
 
-            <h2>12 years experience in finance</h2>
-            <p>As your Timeless Wealth Partner, we hold firmly to the belief that the capacity for immense wealth lies in you.</p>
+
+          <section class="welcome-section sec-pad">
+              <div class="thm-container">
+                <div class="row">
+                  <div class="col-lg-12 col-md-12">
+                    <div class="heading-row">
+                      <div class="sec-title">
+                        <h3>
+                            welcome {{ user.username }}
+                        </h3>
+                      </div>
+                      <!-- <div class="border-line hidden-xs"></div> -->
+                      <div class="card">
+                        {{ user.username }}</br> 
+                        {{ user.profile.location }}</br> 
+                        {{ user.profile.birth_date }}</br> 
+                        {{ user.profile.email }}
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4 col-sm-6">
+                    <div class="single-welcome-box">
+                      <div class="icon-box"><i class="fncp-money"></i></div>
+                      <div class="text-box">
+                        <h4>Financial Planning</h4>
+                        <p>Lorem ipsum dolor sit amet, cons ectetur elit. Vestibulum nec psum dolor sit amet, cons ectetur elit.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-6">
+                    <div class="single-welcome-box">
+                      <div class="icon-box"><i class="fncp-money-1"></i></div>
+                      <div class="text-box">
+                        <h4>Investment Planning</h4>
+                        <p>As your Timeless Wealth Partner, we hold firmly to the belief that the capacity for immense wealth lies in you.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-6">
+                    <div class="single-welcome-box">
+                      <div class="icon-box"><i class="fncp-money"></i></div>
+                      <div class="text-box">
+                        <h4>Mutual Funds</h4>
+                        <p>As your Timeless Wealth Partner, we hold firmly to the belief that the capacity for immense wealth lies in you.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-6">
+                    <div class="single-welcome-box">
+                      <div class="icon-box"><i class="fncp-money"></i></div>
+                      <div class="text-box">
+                        <h4>Mutual Funds</h4>
+                        <p>Lorem ipsum dolor sit amet, cons ectetur elit. Vestibulum nec psum dolor sit amet, cons ectetur elit.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-6">
+                    <div class="single-welcome-box">
+                      <div class="icon-box"><i class="fncp-statistics"></i></div>
+                      <div class="text-box">
+                        <h4>Saving & Investments</h4>
+                        <p>Lorem ipsum dolor sit amet, cons ectetur elit. Vestibulum nec psum dolor sit amet, cons ectetur elit.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-6">
+                    <div class="single-welcome-box">
+                      <div class="icon-box"><i class="fncp-two"></i></div>
+                      <div class="text-box">
+                        <h4>Retirements</h4>
+                        <p>Lorem ipsum dolor sit amet, cons ectetur elit. Vestibulum nec psum dolor sit amet, cons ectetur elit.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="full-img-sec">
+              <div class="thm-container">
+                <div class="row">
+                  <div class="col-md-7">
+                    <div class="left-content">
+                      <div class="sec-title">
+                        <h2>Who We Are</h2>
+                        <div class="decor-line"></div>
+                      </div>
+                      <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p><br>
+                      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <ul>
+                            <li>Audit & Assurance</li>
+                            <li>Business Services</li>
+                            <li>IT Control Solutions</li>
+                          </ul>
+                        </div>
+                        <div class="col-md-6">
+                          <ul>
+                            <li>Audit & Assurance</li>
+                            <li>Business Services</li>
+                            <li>IT Control Solutions</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+
+          <div class="col-md-6 col-sm-12">
             <ul class="social list-inline">
               <li><a href="facebook.com"><i class="fa fa-facebook"></i></a></li>
               <li><a href="twitter.com"><i class="fa fa-twitter"></i></a></li>
@@ -129,6 +272,7 @@
               </div>
             </div>
           </div>
+
           <div class="col-md-12">
             <p class="note">As your Timeless Wealth Partner, we hold firmly to the belief that the capacity for immense wealth lies in you.</p>
           </div>

@@ -1,0 +1,1 @@
+procfile works inside the project directory (i.e where the manage.py file is)

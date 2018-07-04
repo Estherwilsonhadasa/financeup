@@ -1,0 +1,470 @@
+{% load staticfiles %} 
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Northalliance Trust</title>
+    <!-- mobile responsive meta-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'plugins/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'plugins/fontawesome/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'plugins/fncp-icon/style.css' %}">
+    <link rel="stylesheet" href="{% static 'plugins/Stroke-Gap-Icons-Webfont/style.css' %}">
+    <link rel="stylesheet" href="{% static 'plugins/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'plugins/owl.carousel-2/assets/owl.carousel.css' %}">
+    <link rel="stylesheet" href="{% static 'plugins/owl.carousel-2/assets/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static 'plugins/bootstrap-select/dist/css/bootstrap-select.min.css' %}">
+    <!-- main stylesheet-->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+  </head>
+  <body>
+    <header class="header">
+      <div class="thm-container clearfix">
+        <div class="logo pull-left"><a href="/"><img src="{% static 'images/logo/northalliance.png' %}" alt="Awesome Image"></a></div>
+        <div class="header-right-info pull-right">
+          <ul>
+            <li>
+              <div class="single-header-right-info">
+                <div class="icon-box"><i class="icon icon-Pointer"></i></div>
+                <div class="text-box">
+                  <p>13005 Greenville Avenue <br>California, TX 70240</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="single-header-right-info">
+                <div class="icon-box"><i class="icon icon-Phone2"></i></div>
+                <div class="text-box">
+                  <p>+ (1800) 456 7890 <br>info@northalliancetrust.com</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="single-header-right-info">
+                <div class="icon-box"><i class="icon icon-Timer"></i></div>
+                <div class="text-box">
+                  <p>Mon - Sat 9.00 - 19.00 <br>Sunday Closed</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <nav id="main-navigation-wrapper" class="navbar navbar-default finance-navbar">
+      <div class="thm-container">
+        <div class="navbar-header">
+          <div class="logo-menu"><img src="{% static 'images/new/logo-menu.png' %}" alt=""></div>
+          <button type="button" data-toggle="collapse" data-target="#main-navigation" aria-expanded="false" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+        </div>
+        <div id="main-navigation" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About us</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+            <li><a href="/signup">Register</a></li>
+            <li><a href="/login">Login</a></li>
+            <!-- <li><a href="single-member.html">Profile</a></li> -->
+            <li><a href="/services">Services</a></li>
+             <!--  <ul class="dropdown-submenu">
+                <li><a href="company-history.html">Company History</a></li>
+                <li class="new"><a href="#">Our Team</a>
+                  <ul class="dropdown-submenu2">
+                    <li><a href="team.html">Team Grid</a></li>
+                    <li><a href="advisors.html">Team List</a></li>
+                    <li><a href="single-member.html">Single Member Profile</a></li>
+                  </ul>
+                </li>
+                <li><a href="partners.html">Partners</a></li>
+                <li><a href="career.html">Careers</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+              </ul>
+            </li> -->
+          </ul>
+          <form role="search" class="navbar-form navbar-right">
+            <input type="text" placeholder="Enter Keywords">
+            <button type="submit"><i class="icon icon-Search"></i></button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <section class="inner-banner">
+      <div class="thm-container">
+        <div class="page-title">
+          <h3>About us</h3>
+          <p>Money Doesn’t Come Without Guidence ...</p>
+        </div>
+      </div>
+    </section>
+    <div class="bread-cumb">
+      <div class="thm-container">
+        <ul class="list-inline">
+          <li><a href="index.html">Home</a></li>
+          <li><span>About us</span></li>
+        </ul>
+      </div>
+    </div>
+    <section class="about-section sec-pad">
+      <div class="thm-container">
+        <div class="row">
+          <div class="col-md-4"><img src="{% static 'images/about-1.jpg' %}" alt="Awesome Image"></div>
+          <div class="col-md-8">
+            <div class="text-box">
+              <div class="sec-title">
+                <h2>We are North Alliance Trust Bank</h2>
+                <div class="decor-line"></div>
+              </div>
+              <p class="large">North Alliance Trust Bank is a leading bank with an excellent service culture hinged 
+                on working with each customer to create a name and heritage for today and for future 
+                generations.</p>
+              <div class="sec-title medium">
+                <h2>Who we are</h2>
+                <div class="decor-line"></div>
+              </div>
+              <p>With the ideals of Service, Performance, Respect, Integrity, Innovation,
+                Tenacity and Excellence forming core values, we have set out to redefine the concept 
+                of banking for the quintessential customer.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec-pad gray-bg history-sec">
+      <div class="thm-container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="sec-title">
+              <h2>OUr company history</h2>
+              <div class="decor-line"></div>
+            </div>
+            <div class="about-company-history">
+              <div class="img-box hidden-xs"><img src="{% static  'images/about-2.jpg' %}" alt="Awesome Image"></div>
+              <div class="text-box">
+                <p>This is because we believe that no individual is done until they have left something 
+                  behind that defies time- a heritage that places emphasis on creating, preserving and 
+                  transferring wealth across generations.</p>
+                <ul class="list-box">
+                  <li>Financial Managment and Consulting</li>
+                  <li>Advice and Assistance Investing</li>
+                  <li>Comprehensive Support for Your Business</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="right-box">
+              <div class="sec-title">
+                <h2>Helping Small Business</h2>
+                <div class="decor-line"></div>
+              </div>
+              <div class="about-statics">
+                <p>With our ethos of a centered world view of wealth, as shown in the naming 
+                  protocol of the bank’s divisions- Ivory, Manilla, Cowry and Coral Banking, we are 
+                  dedicated to being not just a catalyst for growth in financial sector, 
+                  but an ambassador for showcasing the global quality that the country possesses.
+                  </p>
+                <ul class="list-inline">
+                  <li>
+                    <h3>08</h3>
+                    <p>Years Experience</p>
+                  </li>
+                  <li>
+                    <h3>25<span>K</span></h3>
+                    <p>Happy Customers</p>
+                  </li>
+                  <li>
+                    <h3>100<span>%</span></h3>
+                    <p>Satisfaction</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about-cta sec-pad">
+      <div class="thm-container">
+        <div class="row title-box">
+          <div class="col-lg-2 col-md-3 col-sm-12">
+            <h3>Value of our<br>Company</h3>
+          </div>
+          <div class="col-lg-10 col-md-9 col-sm-12">
+            <div class="right-text-box">
+              <p>By the cosy design of all our retail environments, our branches are appropriately 
+                designated as Experience Centers;  where clients  leave with lasting, positive 
+                impressions of a new definition of service as we have introduced into the industry.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-sm-3 col-xs-6">
+            <div class="single-count-box"><span class="decor-line"></span>
+              <div class="box">
+                <div class="number-box"><span class="counter">15</span></div>
+                <div class="text-box">
+                  <p>Years of <br>Experiences</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-6">
+            <div class="single-count-box"><span class="decor-line"></span>
+              <div class="box">
+                <div class="number-box"><span class="counter">44</span></div>
+                <div class="text-box">
+                  <p>Professional <br>Advisors</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-6">
+            <div class="single-count-box"><span class="decor-line"></span>
+              <div class="box">
+                <div class="number-box"><span class="counter">66</span></div>
+                <div class="text-box">
+                  <p>new cases <br>every years</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-6">
+            <div class="single-count-box"><span class="decor-line"></span>
+              <div class="box">
+                <div class="number-box"><span class="counter">98</span></div>
+                <div class="text-box">
+                  <p>Registered <br>Cases</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec-pad faq-sec">
+      <div class="thm-container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="sec-clients">
+              <div class="sec-title">
+                <h2>What our clients say</h2>
+                <div class="decor-line"></div>
+              </div>
+              <div class="testi-carousel owl-theme owl-carousel">
+                <div class="item">
+                  <div class="single-testimonial">
+                    <div class="top-box">
+                      <div class="img-box"><img src="{% static  'images/testi-1.png' %}" alt=""></div>
+                      <div class="text-box-2">
+                        <h3>John Michale</h3>
+                        <p>Chairman of Indus valley</p>
+                        <ul class="list-inline">
+                          <li><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="bottom-box-2">
+                      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.item-->
+                <div class="item">
+                  <div class="single-testimonial">
+                    <div class="top-box">
+                      <div class="img-box"><img src="{% static 'images/testi-1.png' %}" alt=""></div>
+                      <div class="text-box-2">
+                        <h3>John Michale</h3>
+                        <p>Chairman of Indus valley</p>
+                        <ul class="list-inline">
+                          <li><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="bottom-box-2">
+                      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.item-->
+                <div class="item">
+                  <div class="single-testimonial">
+                    <div class="top-box">
+                      <div class="img-box"><img src="{% static  'images/testi-1.png' %}" alt=""></div>
+                      <div class="text-box-2">
+                        <h3>John Michale</h3>
+                        <p>Chairman of Indus valley</p>
+                        <ul class="list-inline">
+                          <li><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="bottom-box-2">
+                      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.item-->
+                <div class="item">
+                  <div class="single-testimonial">
+                    <div class="top-box">
+                      <div class="img-box"><img src="{% static  'images/testi-1.png' %}" alt=""></div>
+                      <div class="text-box-2">
+                        <h3>John Michale</h3>
+                        <p>Chairman of Indus valley</p>
+                        <ul class="list-inline">
+                          <li><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="bottom-box-2">
+                      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.item-->
+              </div>
+              <!-- /.testi-carousel owl-theme owl-carousel-->
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="faq-page">
+              <div class="sec-title">
+                <h2>What our clients say</h2>
+                <div class="decor-line"></div>
+              </div>
+              <div id="accordion" role="tablist" class="panel-group accordion">
+                <div class="panel panel-default"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="collapsed">OUR MISSION</a>
+                  <div id="collapseOne" role="tabpanel" class="panel-collapse collapse">
+                    <div class="inner-box">
+                      <h3>Our Delivery is all our our country</h3>
+                      <p>This is because we believe that no individual is done until they have left something 
+                        behind that defies time- a heritage that places emphasis on creating, preserving and 
+                        transferring wealth across generations.</p>
+                      <ul>
+                        <li><a href="#"><i class="fa fa-long-arrow-right"></i>Adipis civelit</a></li>
+                        <li><a href="#"><i class="fa fa-long-arrow-right"></i>Adipis civelit  </a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true">OUR VISION</a>
+                  <div id="collapseTwo" role="tabpanel" class="panel-collapse collapse in">
+                    <div class="inner-box">
+                      <h3>Our Delivery is all our our country</h3>
+                      <p>This is because we believe that no individual is done until they have left something 
+                        behind that defies time- a heritage that places emphasis on creating, preserving and 
+                        transferring wealth across generations.</p>
+                      <ul>
+                        <li><a href="#"><i class="fa fa-long-arrow-right"></i>Adipis civelit</a></li>
+                        <li><a href="#"><i class="fa fa-long-arrow-right"></i>Adipis civelit </a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footer-contacts">
+      <div class="thm-container">
+        <h2>We help you to make the best marketable strategy , asset and execution</h2><a data-animation="animated fadeInLeft" href="/about" class="thm-button"> About Us <i class="fa fa-arrow-right"></i></a>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="thm-container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="footer-widget about-widget"><a href="/"><img src="{% static  'images/logo/northalliance.png' %}" alt="Awesome Image"></a>
+              <p>As your Timeless Wealth Partner, we hold firmly to the belief that the capacity for immense wealth lies in you.</p>
+              <div class="tel-box">
+                <div class="icon-box"><i class="fa fa-map-marker"></i></div>
+                <div class="text-box">
+                  <p>42 Tailstoi Town 5248 MT, Wordwide Country</p>
+                </div>
+              </div>
+              <div class="tel-box">
+                <div class="icon-box"><i class="fa fa-phone"></i></div>
+                <div class="text-box">
+                  <p>( 018) 65 524 8503  /  (125) 954 7854</p>
+                </div>
+              </div>
+              <div class="tel-box">
+                <div class="icon-box"><i class="fa fa-envelope"></i></div>
+                <div class="text-box">
+                  <p><a href="#">contact@financepro.com</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <div class="footer-widget links-widget links-widget-pac">
+              <div class="title">
+                <h2>Explore</h2>
+                <div class="decor-line"></div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 col-sm-12">
+                  <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/contact">Contact Us</a></li>
+                    <!-- <li><a href="single-member.html.html">Profile</a></li> -->
+                    <li><a href="/services">Services</a></li>
+                  </ul>
+                </div>
+           
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <div class="footer-widget subscribe-widget">
+              <div class="title">
+                <h2>Subscribe Newsletter</h2>
+                <div class="decor-line"></div>
+              </div>
+              <form action="#">
+                <p>Get latest updates and offers.</p>
+                <div class="newsletter-widget">
+                  <input type="text" placeholder="Enter your email address">
+                  <button type="submit" class="thm-button"><i class="fa fa-envelope"></i></button>
+                </div>
+              </form>
+              <ul class="social list-inline">
+                <li><a href="facebook.com"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="linkedin.com"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="twitter.com"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="google.com"><i class="fa fa-google-plus"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <section class="footer-bottom">
+      <div class="thm-container clearfix">
+        <div class="pull-left">
+          <p>Copyright©northalliancetrust 2018. All rights reserved. </p>
+        </div>
+        <!-- <div class="pull-right">
+          <p>Created by: DesignArc</p>
+        </div> -->
+      </div>
+    </section>
+    <!-- helper js-->
+    <script src="plugins/jquery.min.js"></script>
+    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="plugins/owl.carousel-2/owl.carousel.min.js"></script>
+    <script src="plugins/jquery.mixitup.min.js"></script>
+    <script src="plugins/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+    <script src="plugins/Chart.min.js"></script>
+    <script src="plugins/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="plugins/waypoints.min.js"></script>
+    <script src="plugins/jquery.counterup.min.js"></script>
+    <script src="js/theme.js"></script>
+  </body>
+
+</html>

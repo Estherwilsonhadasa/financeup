@@ -96,7 +96,7 @@
     <div id="minimal-bootstrap-carousel" data-ride="carousel" class="carousel slide carousel-fade shop-slider">
       <!-- Wrapper for slides-->
       <div role="listbox" class="carousel-inner">
-        <div style="{% static 'background-image: url(images/new/slider1.jpg);background-position: center right;' %}" class="item active slide-1">
+        <div style="background-image: url('{% static "images/new/slider1.jpg" %}' );background-position: center right;" class="item active slide-1">
           <div class="carousel-caption">
             <div class="thm-container">
               <div class="box valign-bottom">
@@ -108,7 +108,7 @@
             </div>
           </div>
         </div>
-        <div style="background-image: url(images/new/slider2.jpg);background-position: center right;" class="item slide-2">
+        <div style="background-image: url('{% static "images/new/slider2.jpg" %}');background-position: center right;" class="item slide-2">
           <div class="carousel-caption">
             <div class="thm-container">
               <div class="box valign-bottom">
@@ -381,70 +381,7 @@
     </section>
 
  
-    <section class="sec-pad latest-blog latest-blog2">
-      <div class="thm-container">
-        <div class="sec-title">
-          <h2>Latest Blogs</h2>
-          <div class="decor-line"></div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <div class="single-blog-post">
-              <div class="img-box"><a href="#"><img src="{% static 'images/single-blog-img.jpg' %}" alt="Awesome Image"></a></div>
-              <div class="text-box">
-                <div class="content-box"><a href="#">
-                    <h3>Financial Adds Value to Your life worth how to know ?</h3></a>
-                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusa nt ium dolor emque laudantium totam.</p>
-                  <div class="post-resource">
-                    <ul>
-                      <li><i class="fa fa-user"></i><a href="#">Anjori Meyami</a></li>
-                      <li><i class="fa fa-comments"></i><a href="#">comments : 6</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <div class="single-blog-post">
-              <div class="img-box"><a href="#"><img src="{% static 'images/single-blog-img2.jpg' %}" alt="Awesome Image"></a></div>
-              <div class="text-box">
-                <div class="content-box"><a href="#">
-                    <h3>Financial Adds Value to Your life worth how to know ?</h3></a>
-                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusa nt ium dolor emque laudantium totam.</p>
-                  <div class="post-resource">
-                    <ul>
-                      <li><i class="fa fa-user"></i><a href="#">Anjori Meyami</a></li>
-                      <li><i class="fa fa-comments"></i><a href="#">comments : 6</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- col-->
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <div class="single-blog-post">
-              <div class="img-box"><a href="#"><img src="{% static 'images/single-blog-img3.jpg' %}" alt="Awesome Image"></a></div>
-              <div class="text-box">
-                <div class="content-box"><a href="#">
-                    <h3>Financial Adds Value to Your life worth how to know ?</h3></a>
-                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusa nt ium dolor emque laudantium totam.</p>
-                  <div class="post-resource">
-                    <ul>
-                      <li><i class="fa fa-user"></i><a href="#">Anjori Meyami</a></li>
-                      <li><i class="fa fa-comments"></i><a href="#">comments : 6</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- col-->
-        </div>
-      </div>
-    </section>  
+  
     <section class="footer-contacts">
       <div class="thm-container">
         <h2>We help you to make the best marketable strategy , asset and execution</h2><a data-animation="animated fadeInLeft" href="{% url 'contact' %}" class="thm-button">Contact Us <i class="fa fa-arrow-right"></i></a>
